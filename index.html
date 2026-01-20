@@ -1,206 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechWave Podcast</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="nav-container">
-    <div class="logo">TechWave</div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="#">
+        <!-- REPLACE WITH YOUR LOGO -->
+        <img class="brand-logo" src="images/logo.png" alt="TechWave logo" />
+      </a>
 
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-      <span></span><span></span><span></span>
-    </label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
 
-    <ul class="nav-links">
-      <li>About</li>
-      <li>Why Choose</li>
-      <li>Host</li>
-      <li>Episodes</li>
-    </ul>
+      <nav class="nav-center">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#why">Why Choose</a></li>
+          <li><a href="#episodes">Episodes</a></li>
+          <li><a href="#host">Host</a></li>
+        </ul>
+      </nav>
 
-    <button class="nav-btn">Listen Now</button>
-  </div>
-</header>
+      <a class="btn btn-gradient nav-cta" href="#episodes">Listen Now</a>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <div class="circle">
-      <span class="badge">New</span>
-    </div>
-    <h1>Real Conversations From the Tech World</h1>
-    <p>
-      A podcast that simplifies technology, product thinking, and real-world
-      engineering stories into clear and useful insights.
-    </p>
-    <div class="hero-buttons">
-      <button class="primary-btn">Explore Episodes</button>
-      <button class="secondary-btn">Learn More</button>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about">
-  <div class="about-container">
-    <h2>About the Podcast</h2>
-    <p class="about-text">
-      TechWave is a weekly podcast focused on technology, innovation, and real-world
-      problem solving. Each episode is designed to be short, practical, and easy to
-      follow, even for complex topics.
-    </p>
-
-    <div class="stats">
-      <div class="stat-card">
-        <h3>120+</h3>
-        <p>Episodes Published</p>
-      </div>
-      <div class="stat-card">
-        <h3>35+</h3>
-        <p>Guest Speakers</p>
-      </div>
-      <div class="stat-card">
-        <h3>15k+</h3>
-        <p>Monthly Listeners</p>
-      </div>
-      <div class="stat-card">
-        <h3>4.9/5</h3>
-        <p>Average Rating</p>
+      <!-- Mobile dropdown -->
+      <div class="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#why">Why Choose</a>
+        <a href="#episodes">Episodes</a>
+        <a href="#host">Host</a>
+        <a class="btn btn-gradient mobile-cta" href="#episodes">Listen Now</a>
       </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- WHY CHOOSE -->
-<section class="why-choose">
-  <div class="why-container">
-    <h2>Why Choose TechWave</h2>
-    <p class="why-text">
-      We focus on clarity, simplicity, and real-world relevance. Every episode is
-      carefully structured so listeners can quickly understand and apply the ideas.
-    </p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wave-top" aria-hidden="true"></div>
 
-    <div class="features">
-      <div class="feature-card">
-        <h3>Clear Explanations</h3>
-        <p>Complex topics are broken down into simple, understandable ideas.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Short Episodes</h3>
-        <p>Each episode is designed to fit easily into a busy schedule.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Practical Focus</h3>
-        <p>We focus on what actually works in real-world projects.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Expert Guests</h3>
-        <p>Insights from professionals working in the tech industry.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Consistent Format</h3>
-        <p>Listeners always know what to expect from each episode.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="container hero-wrap">
+      <div class="hero-center">
+        <div class="pod-circle">
+          <span class="badge-new">New</span>
 
-<!-- HOST -->
-<section class="host">
-  <div class="host-container">
-    <div class="host-image"></div>
+          <!-- REPLACE WITH YOUR HERO AVATAR IMAGE -->
+          <img class="pod-avatar" src="images/hero-avatar.png" alt="Podcast avatar" />
 
-    <div class="host-info">
-      <h2>Meet the Host</h2>
-      <h3>Amina Rahman</h3>
-      <p>
-        Amina is a tech professional who enjoys turning complex systems into simple,
-        practical learning. She hosts TechWave to share real stories about building,
-        debugging, and improving products in the modern tech industry.
-      </p>
-
-      <div class="social-icons">
-        <a href="#" class="social">in</a>
-        <a href="#" class="social">X</a>
-        <a href="#" class="social">YT</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURED EPISODES -->
-<section class="episodes">
-  <div class="episodes-container">
-    <h2>Featured Episodes</h2>
-    <p class="episodes-text">
-      Start with these popular episodes that show the TechWave format: clear explanations,
-      practical examples, and short takeaways you can apply immediately.
-    </p>
-
-    <div class="episode-grid">
-      <div class="episode-card">
-        <div class="episode-top">
-          <h3>Lightweight Systems That Still Feel Professional</h3>
-          <span class="duration">22 min</span>
+          <div class="pod-glow" aria-hidden="true"></div>
         </div>
-        <p>
-          How to design simple systems without sacrificing structure, clarity, or quality.
+
+        <h1>TechWave</h1>
+        <p class="hero-sub">
+          Where tech stories become simple lessons — fast, practical, and enjoyable.
         </p>
-        <div class="video-box">
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Episode 1"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </div>
 
-      <div class="episode-card">
-        <div class="episode-top">
-          <h3>Governed Data Without Heavy Governance</h3>
-          <span class="duration">19 min</span>
+        <div class="hero-actions">
+          <a class="btn btn-gradient" href="#episodes">Listen The Podcast</a>
+          <a class="btn btn-ghost" href="#about">Get Started</a>
         </div>
-        <p>
-          Simple lifecycle states and ownership rules that reduce confusion and rework.
-        </p>
-        <div class="video-box">
-          <iframe
-            src="https://www.youtube.com/embed/3GwjfUFyY6M"
-            title="Episode 2"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </div>
 
-      <div class="episode-card">
-        <div class="episode-top">
-          <h3>From Idea to Delivery: Keep Momentum With Small Wins</h3>
-          <span class="duration">25 min</span>
-        </div>
-        <p>
-          A practical workflow for shipping: slice scope, validate early, and learn fast.
-        </p>
-        <div class="video-box">
-          <iframe
-            src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            title="Episode 3"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-num">120+</div>
+            <div class="stat-label">Episodes</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">35+</div>
+            <div class="stat-label">Guests</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">4.9/5</div>
+            <div class="stat-label">Rating</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">15k+</div>
+            <div class="stat-label">Listeners</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>About</h2>
+        <p>
+          TechWave is a weekly podcast for learners who want clarity. We break down modern
+          tech topics into steps, trade-offs, and actions you can apply.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Short & structured</h3>
+          <p>Each episode follows a simple flow: problem → options → trade-off → takeaway.</p>
+        </div>
+        <div class="about-card">
+          <h3>Real examples</h3>
+          <p>We focus on realistic scenarios: deadlines, constraints, and decisions.</p>
+        </div>
+        <div class="about-card">
+          <h3>Easy to revisit</h3>
+          <p>Clear titles, concise explanations, and practical summaries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section id="why" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why Choose TechWave</h2>
+        <p>
+          Designed for busy people: clear, consistent, and focused on what matters.
+        </p>
+      </div>
+
+      <!-- Layout: 3 cards top, 2 cards bottom (like thumbnail) -->
+      <div class="why-grid">
+        <article class="why-card">
+          <div class="why-icon">⚡</div>
+          <h3>Fast takeaways</h3>
+          <p>Action steps at the end of every episode.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-icon">🧠</div>
+          <h3>Clear explanations</h3>
+          <p>No heavy jargon — examples first, theory after.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-icon">🧩</div>
+          <h3>System thinking</h3>
+          <p>We connect people, process, and tools in one picture.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-icon">🎧</div>
+          <h3>Easy format</h3>
+          <p>Consistent structure so it’s easy to follow.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-icon">🌍</div>
+          <h3>Real stories</h3>
+          <p>Lessons from teams shipping under constraints.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED EPISODES -->
+  <section id="episodes" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured Episodes</h2>
+        <p>Three starter episodes with video links included inside each card.</p>
+      </div>
+
+      <div class="episodes-grid">
+        <article class="episode-card">
+          <!-- REPLACE WITH YOUR EPISODE THUMB -->
+          <img class="ep-thumb" src="images/ep1.jpg" alt="Episode thumbnail 1" />
+          <div class="ep-top">
+            <h3>Lightweight systems that still feel professional</h3>
+            <span class="pill">22 min</span>
+          </div>
+          <p>How to keep solutions simple without losing structure.</p>
+
+          <div class="video-box">
+            <!-- REPLACE VIDEO ID -->
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+              title="Episode 1 video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+
+        <article class="episode-card">
+          <img class="ep-thumb" src="images/ep2.jpg" alt="Episode thumbnail 2" />
+          <div class="ep-top">
+            <h3>Governed data without heavy governance</h3>
+            <span class="pill">19 min</span>
+          </div>
+          <p>Lifecycle states and ownership rules that reduce confusion.</p>
+
+          <div class="video-box">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+              title="Episode 2 video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+
+        <article class="episode-card">
+          <img class="ep-thumb" src="images/ep3.jpg" alt="Episode thumbnail 3" />
+          <div class="ep-top">
+            <h3>From idea to delivery: momentum with small wins</h3>
+            <span class="pill">25 min</span>
+          </div>
+          <p>How to slice scope, validate early, and keep shipping.</p>
+
+          <div class="video-box">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+              title="Episode 3 video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOST -->
+  <section id="host" class="section section-alt">
+    <div class="container">
+      <div class="host-wrap">
+        <!-- REPLACE WITH YOUR HOST IMAGE -->
+        <img class="host-img" src="images/host.jpg" alt="Host portrait" />
+
+        <div class="host-info">
+          <h2>Meet The Host</h2>
+          <h3>Amina Rahman</h3>
+          <p>
+            Amina shares real stories from engineering and product building. Her focus is
+            practical learning: how decisions get made, how systems fail, and how teams improve.
+          </p>
+
+          <div class="social-row">
+            <a class="social" href="#">in</a>
+            <a class="social" href="#">X</a>
+            <a class="social" href="#">YT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wave-bottom" aria-hidden="true"></div>
+
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <div class="footer-mark"></div>
+        <div>
+          <div class="footer-title">TechWave</div>
+          <div class="footer-sub">Podcast platform • YouTube • Spotify • Apple Podcasts</div>
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+      <div class="footer-copy">© 2026 TechWave. All rights reserved.</div>
+    </div>
+  </footer>
 
 </body>
 </html>
