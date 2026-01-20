@@ -52,10 +52,13 @@
 
     <div class="container hero-inner">
 
-      <div class="hero-circle">
-        <img src="assets/hero-circle.png" alt="Podcast circle" />
-        <span class="new-badge">NEW</span>
-      </div>
+      <div class="hero-circle-wrap">
+  <div class="hero-circle">
+    <img class="hero-mic" src="assets/microphone.png" alt="Microphone icon">
+  </div>
+  <span class="new-badge">NEW</span>
+</div>
+
 
       <h1 class="hero-title">TechWave</h1>
       <p class="hero-sub">
@@ -174,29 +177,19 @@
   </section>
 
   <!-- EPISODES -->
-  <section id="episodes" class="section episodes">
-    <div class="container">
-      <h2 class="section-title">Featured Episodes</h2>
-      <p class="section-desc">
-        Three featured episode cards with embedded YouTube videos (as required).
-      </p>
+  
+   <section id="episodes" class="section episodes">
+  <div class="container">
+    <h2 class="section-title">Featured Episodes</h2>
+    <p class="section-desc">
+      Three featured episode cards with embedded YouTube videos (as required).
+    </p>
 
-      <div class="episode-grid">
+    <div class="episode-grid">
 
-        <article class="episode-card">
-          <div class="thumb">
-            <div class="play-btn">▶</div>
-          </div>
-
-          <div class="episode-row">
-            <h3>Episode 1: Product Mindset</h3>
-            <span class="duration">
-              <img src="assets/clock.png" alt="clock" /> 22 min
-            </span>
-          </div>
-
-          <p>How to approach product building with clarity and speed.</p>
-
+      <!-- Episode 1 -->
+      <article class="episode-card">
+        <div class="video-shell">
           <div class="video">
             <iframe
               src="https://www.youtube.com/embed/B_K6z3HiRAs"
@@ -205,46 +198,44 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-        </article>
+        </div>
 
-        <article class="episode-card">
-          <div class="thumb">
-            <div class="play-btn">▶</div>
-          </div>
+        <div class="episode-row">
+          <h3>Episode 1: Product Mindset</h3>
+          <span class="duration">
+            <img src="assets/clock.png" alt="clock" /> 22 min
+          </span>
+        </div>
 
-          <div class="episode-row">
-            <h3>Episode 2: Tech Clarity</h3>
-            <span class="duration">
-              <img src="assets/clock.png" alt="clock" /> 19 min
-            </span>
-          </div>
+        <p>How to approach product building with clarity and speed.</p>
+      </article>
 
-          <p>Simple mental models for understanding complex systems.</p>
-
+      <!-- Episode 2 -->
+      <article class="episode-card">
+        <div class="video-shell">
           <div class="video">
             <iframe
-              src="https://www.youtube.com/embed/YrLk4vdY28Q"
+              src="https://www.youtube.com/embed/9RYy_8u4blk"
               title="Episode 2"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-        </article>
+        </div>
 
-        <article class="episode-card">
-          <div class="thumb">
-            <div class="play-btn">▶</div>
-          </div>
+        <div class="episode-row">
+          <h3>Episode 2: Tech Clarity</h3>
+          <span class="duration">
+            <img src="assets/clock.png" alt="clock" /> 19 min
+          </span>
+        </div>
 
-          <div class="episode-row">
-            <h3>Episode 3: Shipping Better</h3>
-            <span class="duration">
-              <img src="assets/clock.png" alt="clock" /> 25 min
-            </span>
-          </div>
+        <p>Simple mental models for understanding complex systems.</p>
+      </article>
 
-          <p>Momentum through small wins: scope, validate, ship.</p>
-
+      <!-- Episode 3 -->
+      <article class="episode-card">
+        <div class="video-shell">
           <div class="video">
             <iframe
               src="https://www.youtube.com/embed/9RYy_8u4blk"
@@ -253,11 +244,22 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-        </article>
+        </div>
 
-      </div>
+        <div class="episode-row">
+          <h3>Episode 3: Shipping Better</h3>
+          <span class="duration">
+            <img src="assets/clock.png" alt="clock" /> 25 min
+          </span>
+        </div>
+
+        <p>Momentum through small wins: scope, validate, ship.</p>
+      </article>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- HOST -->
   <section id="host" class="section host">
